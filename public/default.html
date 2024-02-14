@@ -6,17 +6,32 @@
     <title>Document</title>
 </head>
 <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 <body>
-    <div class="container">
-        <div class="greet">Welcome to my page</div>
-        <div class="header">
+    <div class="container" class="hidden" >
+        <div class="greet" data-aos="fade-left">Welcome to my page</div>
+        <div class="header" data-aos="fade-down">
            <a href="/create"><button class="regbtn">SignUp</button></a> 
             <a href="/auth"><button class="regbtn">LoginUp</button></a>
         </div>
         
     </div>
-    <div class="middle">
-<div ><img src="default.jpg" class="middle-img"></div>
-    </div>
+    <div class="middle" class="hidden" data-aos="fade-right">
+        <div>
+            <video  autoplay loop muted src="./assets/video (2160p).mp4" class="middle-img"></video>
+        </div>
+        </div>
 </body>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+
+        AOS.init({
+            offset: 300,
+            duration: 1000,
+        });
+
+    
+
+</script>
+
 </html>

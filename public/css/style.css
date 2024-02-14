@@ -1,7 +1,11 @@
+
 body{
     background: rgb(2,0,36);
 background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(166,159,11,1) 0%, rgba(210,184,208,1) 0%, rgba(141,22,214,1) 82%, rgba(0,212,255,1) 97%);
+height: 2000px;
 }
+
+
 .container{
 
     display: flex;
@@ -13,6 +17,7 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(166,159,11,1) 0%, rgb
     font-size: 35px;
     font-family: 'Courier New', Courier, monospace;
     transition: 0.25s;
+    cursor:pointer;
 }
 .greet:hover{
     color:white
@@ -25,6 +30,7 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(166,159,11,1) 0%, rgb
     background-color: black;
     color: white;
     transition: 0.15s;
+    cursor:pointer;
 }
 .regbtn:hover{
         background-color: white;
@@ -37,8 +43,16 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(166,159,11,1) 0%, rgb
     margin-top: 20px;
     border-radius: 15px;
     transition: 0.15s;
+  
+    cursor: pointer;
 }
 .middle-img:hover{
     transform: scale(1.025);
 }
-
+.hidden{
+    opacity: 0;
+    transition: all 1s;
+}
+.show{
+    opacity: 1;
+}
