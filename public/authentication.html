@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<form method="POST" action="/auth">
+
+    <div class="box">
+        <div class="Header"> <h3 >Login in</h3></div>
+        <div class="container">
+            <input type="text" name="username" placeholder="username" class="user-box">
+            <input type="password" name="password" placeholder="password" class="key-box">
+            <div id="submit-btn"><input type="submit" id="submit"></div>
+        </div>
+        <div class="dir"><a href="/create" class="dir-auth">Create new account</a></div>
+    </div>
+</form>
+
+<style>
+    *{
+        margin:0;
+        padding:0;
+    }
+    .Header{
+        margin-left:102px;
+        margin-top: -60px;
+        color: white;
+    }
+    .box{
+        background-color: blue;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 25px;
+        border: 1px solid black;
+        width: 285px;
+
+        padding-top: 110px;
+        padding-left: 30px;
+         padding-right: 30px;
+     
+        height: 255px;
+        margin-left:521px;
+        margin-top:39px;
+
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+           gap:10px;
+    }
+    .user-box{
+        height: 36px;
+        text-align: center;
+        
+    }
+      .key-box{
+        height: 36px;
+              text-align: center;
+       
+    }
+  
+    #submit {
+    margin-top: 20px;
+    margin-left: 86px;
+    width: 117px;
+    border-radius: 5px;
+    height: 40px;
+}
+    body{
+        background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(166,159,11,1) 0%, rgba(210,184,208,1) 0%, rgba(141,22,214,1) 79%, rgba(0,212,255,1) 97%);
+    }
+    .dir{
+   
+   position: relative;
+   top: 45px;
+}
+.dir-auth{
+    color:white;
+   
+}
+</style>
+</html>

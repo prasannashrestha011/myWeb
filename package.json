@@ -1,0 +1,23 @@
+{
+  "name": "prasanna",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "prasannashrestha",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "express-handlebars": "^7.1.2",
+    "express-session": "^1.18.0",
+    "express-validator": "^7.0.1",
+    "mime": "^4.0.1",
+    "mongoose": "^8.1.3",
+    "passport": "^0.7.0",
+    "passport-local": "^1.0.0"
+  }
+}

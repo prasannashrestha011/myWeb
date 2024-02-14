@@ -1,0 +1,44 @@
+body{
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(166,159,11,1) 0%, rgba(210,184,208,1) 0%, rgba(141,22,214,1) 82%, rgba(0,212,255,1) 97%);
+}
+.container{
+
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+}
+.greet{
+    margin-left:457px;
+    font-size: 35px;
+    font-family: 'Courier New', Courier, monospace;
+    transition: 0.25s;
+}
+.greet:hover{
+    color:white
+}
+
+.regbtn{
+    height: 45px;
+    font-family: 'Courier New', Courier, monospace;
+    width: 90px;
+    background-color: black;
+    color: white;
+    transition: 0.15s;
+}
+.regbtn:hover{
+        background-color: white;
+        color: black;
+        transform: scale(0.9);
+}
+.middle-img {
+    width: 615px;
+    margin-left: 353px;
+    margin-top: 20px;
+    border-radius: 15px;
+    transition: 0.15s;
+}
+.middle-img:hover{
+    transform: scale(1.025);
+}
+

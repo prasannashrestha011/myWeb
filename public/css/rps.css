@@ -1,0 +1,50 @@
+
+body{
+    background-color: #34113F;
+}
+.container{
+    width: 290px;
+    height: 159px;
+    border:1px solid black;
+    position: absolute;
+    left: 239px;
+    top: 69px;
+    display: flex;
+    align-items:center;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    box-shadow:  3px 3px 10px black;
+    background-color: #573280;
+}
+.box{
+    width: 69px;
+    height: 30px;
+    color: #006D77;
+    border-radius: 25px;
+    border-color: #0267C1;
+    
+}
+.box:active{
+    border-color: yellow;
+}
+#display-winner{
+    width: 250px;
+    height: 29px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+   justify-content: center;
+   display: none;
+    position: absolute;
+    top: 3px;
+}
+.reset{
+    width: 90px;
+    height: 20px;
+    border: 2px solid black;
+    position:absolute;
+    top:130px;
+    border-radius: 25px;
+    border-color: #0267C1;
+
+}

@@ -1,0 +1,77 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background-color: skyblue;
+}
+.container{
+    height: 70vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.main-box{
+    height:60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1.3vmin;
+
+
+}
+.box{
+    width:19.11vmin;
+    padding-left: 10px;
+    height: 90px;
+    border-radius: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    font-size: 7vmin;
+    background-color: white;
+    color: black;
+
+    
+}
+.reset{
+    position:absolute;
+    bottom:118px;
+    left:643px;
+    border-radius: 20px;
+    width: 90px;
+}
+#winner-board {
+    width: 323px;
+    height: 68px;
+    border: 2px solid black;
+    position: relative;
+    left: 526px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    appearance: none;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    font-size: 19px;
+    color:white;
+}
+.back {
+        width: 90px;
+        height: 46px;
+        background: cadetblue;
+        color: whitesmoke;
+        margin-left: 119px;
+        position: absolute;
+        top:20px
+    }
+.back-btn{
+    display: flex;
+    width: 120px;
+    margin-top:55px
+}
