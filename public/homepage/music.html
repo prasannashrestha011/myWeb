@@ -6,38 +6,50 @@
     <title>Document</title>
     <link rel="stylesheet" href="../css/music.css">
 </head>
-<body>
-   
+<body class="struct">
+    <a href="/blog"><button class="back">Back</button> </a>
     <div class="container">
         
-        <div class="audio-header"></div>
+        <div class="audio-header">
+            <div  class="h-img" ><img class="img-cat" id="h-imgd" src="../assets/musicPG/def.png" ></div>
+            <div  class="h-img" ><img class="img-cat" id="h-img1" src="../assets/musicPG/w1.jpg" ></div>
+            <div class="h-img" ><img  class="img-cat" id="h-img2" src="../assets/musicPG/audio2.jpg" ></div>
+            <div class="h-img"><img class="img-cat" src="../assets/musicPG/w2.jpg" id="h-img3"></div>
+            <div class="h-img"><img  class="img-cat" src="../assets/musicPG/w3.png"id="h-img4" ></div>
+        </div>
         <div class="library">
-            <div class="music-nav" id="m1"> <!--m1-->
-                <div class="music-title">Music Title</div>
-                <div class="music-ctrl">
-                  <button id="audio_1" onclick="audio_play(audio_1)" class="audio_btn">Play</button>
-                  <button onclick="audio_pause(audio_1)">Stop</button>
+            <div class="container-2">
+                <div class="music-nav" id="m1"> <!--m1-->
+                    <div class="music-title"><div id="header_1" class="title_author">Kate Bush-running up that hill</div></div>
+                    <div class="music-ctrl">
+                      <button id="audio_1" onclick="audio_play(audio_1)" class="audio_btn">	&#x25B6;</button>
+                      <button onclick="audio_pause(audio_1)" class="audio_btn">Stop</button>
+                      <button onclick="audio_reset(audio_1)" class="audio_btn">Reset</button>
+                    </div>
                 </div>
-            </div>
-            <div class="music-nav" id="m2"><!--m2-->
-                <div class="music-title">Music Title</div>
-                <div class="music-ctrl">
-                    <button onclick="audio_play(audio_2)" id="audio_2" class="audio_btn">Play</button>
-                    <button onclick="audio_pause(audio_2)">Stop</button>
+                <div class="music-nav" id="m2"><!--m2-->
+                    <div class="music-title"><div id="header_2" class="title_author">Every breathe you take</div></div>
+                    <div class="music-ctrl">
+                        <button onclick="audio_play(audio_2)" id="audio_2" class="audio_btn">	&#x25B6;</button>
+                        <button onclick="audio_pause(audio_2)" class="audio_btn">Stop</button>
+                        <button onclick="audio_reset(audio_2)" class="audio_btn">Reset</button>
+                    </div>
                 </div>
-            </div>
-            <div class="music-nav" id="m3"><!--m3-->
-                <div class="music-title">Music Title</div>
-                <div class="music-ctrl">
-                    <button onclick="audio_play(audio_3)" id="audio_3" class="audio_btn">Play</button>
-                    <button onclick="audio_pause(audio_3)" >Stop</button>
+                <div class="music-nav" id="m3"><!--m3-->
+                    <div class="music-title"><div id="header_3" class="title_author">Everybody  wants to rule the world</div></div>
+                    <div class="music-ctrl">
+                        <button onclick="audio_play(audio_3)" id="audio_3" class="audio_btn">	&#x25B6;</button>
+                        <button onclick="audio_pause(audio_3)" class="audio_btn">Stop</button>
+                        <button onclick="audio_reset(audio_3)" class="audio_btn">Reset</button>
+                    </div>
                 </div>
-            </div>
-            <div class="music-nav" id="m4"><!--m4-->
-                <div class="music-title">Music title</div>
-                <div class="music-ctrl">
-                    <button onclick="audio_play(audio_4)"id="audio_4" class="audio_btn">Play</button>
-                    <button onclick="audio_pause(audio_4)">Stop</button>
+                <div class="music-nav" id="m4"><!--m4-->
+                    <div class="music-title"><div id="header_4" class="title_author">Ghost-mary on cross</div></div>
+                    <div class="music-ctrl">
+                        <button onclick="audio_play(audio_4)"id="audio_4" class="audio_btn">	&#x25B6;</button>
+                        <button onclick="audio_pause(audio_4)" class="audio_btn">Stop</button>
+                        <button onclick="audio_reset(audio_4)" class="audio_btn">Reset</button>
+                    </div>
                 </div>
             </div>
         </div>

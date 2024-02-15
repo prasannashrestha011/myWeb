@@ -1,37 +1,70 @@
+body{
+  
+   background-repeat: no-repeat;
+ 
+}
+.struct{
+    background: url(../assets/musicPG/bgd.jpg);
+    transition:   background-image 3.55s;
+
+}
+
 .container {
-    width: 633px;
-    height: 764px;
-    margin-left: 367px;
-    border: 1px solid red;
+    width: 613px;
+    height: 714px;
+    border-radius: 15px;
     display:flex;
     flex-direction:column;
     justify-content: center;
     align-items: center;
+    margin-left: 368px;
+    margin-top: 30px;
+    background: rgb(2,0,36);
+    background-image: linear-gradient(to bottom, #ffc0e3, #f1a5df, #dd8ce0, #bf77e4, #9566eb, #7676f6, #5084fd, #008fff, #00b0ff, #00cdff, #00e6fe, #0ffdeb);
 }
 .audio-header{
     width: 400px;
     height: 400px;
-    border: 1px solid black;
+    
     margin-left:17px;
     margin-top:10px;
    background-repeat: no-repeat;
+   opacity: none;
+    transition: opacity 5s;
+   position: relative;
+}
+.audio_btn{
+    width: 60px;
+    height: 38px;
+}
+.music-ctrl{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    margin-left: 25px;
+    
 }
 .library{
     display: flex;
     flex-direction: column;
     gap: 10px;
     width: 600px;
-    height: 350px;
-    margin-left:17px;
+    height: 280px;
+    margin-left:2px;
     margin-top:10px;
-    border: 1px solid black;
-    
+    border-radius: 15px;
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+    margin-bottom: 10px;
+}
+.container-2{
+    margin-top:45px;
 }
 .music-nav{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid black;
+  
     padding-left: 10px;
     padding-right: 10px;
 }
@@ -42,4 +75,59 @@
     height: 40px;
     border: 1px solid red;
     
+}
+
+.title_author{
+    width: 287px;
+    font-size: 1em;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* hiddenimages*/
+#h-imgd{
+    width: 400px;
+    opacity: 1;
+    transition: opacity 0.15s;
+}
+#h-img1{
+    width: 400px;
+    opacity: 0;
+    transition: opacity 0.15s;
+}
+#h-img2 {
+    top: 400px; /* Adjust the top position to stack the images */
+    opacity: 0;
+    width: 400px;
+    transition: opacity 0.15s;
+}
+
+#h-img3 {
+    top: 400px; /* Adjust the top position to stack the images */
+    width: 400px;
+    opacity: 0;
+    transition: opacity 0.15s;
+}
+
+#h-img4 {
+    top: 400px; /* Adjust the top position to stack the images */
+    opacity: 0;
+    width: 400px;
+    transition: opacity 0.15s;
+}
+.h-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 400px;
+    transition: opacity 0.15s;
+}
+.back {
+    width: 90px;
+    height: 46px;
+    background: cadetblue;
+    color: whitesmoke;
+    margin-left: 26px;
+    position: absolute;
+    top:10px;
+    cursor: pointer;
 }
