@@ -77,11 +77,11 @@ app.get('/blog',(req,res)=>{
 app.get('/projects',isAuthenticated,(req,res)=>{
     res.sendFile(path.join(__dirname,'../public/homepage/home.html'))
 })
-app.get('/about',isAuthenticated,(req,res)=>{
-    res.send('About page')
+app.get('/gallery',isAuthenticated,(req,res)=>{
+    res.sendFile(path.join(__dirname,'../public/homepage/gallery.html'))
 })
-app.get('/contact',isAuthenticated,(req,res)=>{
-    res.send('Contact page')
+app.get('/Musiclibrary',isAuthenticated,(req,res)=>{
+    res.sendFile(path.join(__dirname,'../public/homepage/music.html'))
 })
 app.get('/signout', (req, res) => {
     req.logout(()=>console.log('LOGOUT')); // Passport method to log out
