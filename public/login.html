@@ -37,12 +37,14 @@ AOS.init({
         color: white;
     }
     .box{
-        background-color: blue;
+        background: linear-gradient(135deg,  rgba(167,207,223,1) 0%,rgba(35,83,138,1) 100%);
+
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
         gap: 25px;
-        border: 1px solid black;
+        
+        border-radius: 10px;
         width: 285px;
 
         padding-top: 110px;
@@ -59,23 +61,38 @@ AOS.init({
         flex-direction: column;
            gap:10px;
     }
-    .user-box{
+    .user-box {
+    height: 36px;
+    text-align: center;
+    border: none;
+    transition: outline-color 0.3s; /* smooth transition for outline color change */
+}
+
+.user-box:focus {
+    outline-color: blue; /* outline color when input is focused */
+}
+
+
+ .key-box{
         height: 36px;
         text-align: center;
-        
+        border: none;
+        transition: outline-color 0.3s;
     }
-      .key-box{
-        height: 36px;
-              text-align: center;
-       
-    }
+.key-box:focus{
+    outline-color: blue;
+}
   
-    #submit {
+#submit {
     margin-top: 20px;
     margin-left: 86px;
     width: 117px;
     border-radius: 5px;
     height: 40px;
+    font-family: monospace;
+    font-size: 17px;
+    background-color: gold;
+    color:brown;
 }
     body{
         background: rgb(2,0,36);

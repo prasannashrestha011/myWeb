@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/music.css">
+</head>
+<body>
+   
+    <div class="container">
+        
+        <div class="audio-header"></div>
+        <div class="library">
+            <div class="music-nav" id="m1"> <!--m1-->
+                <div class="music-title">Music Title</div>
+                <div class="music-ctrl">
+                  <button id="audio_1" onclick="audio_play(audio_1)" class="audio_btn">Play</button>
+                  <button onclick="audio_pause(audio_1)">Stop</button>
+                </div>
+            </div>
+            <div class="music-nav" id="m2"><!--m2-->
+                <div class="music-title">Music Title</div>
+                <div class="music-ctrl">
+                    <button onclick="audio_play(audio_2)" id="audio_2" class="audio_btn">Play</button>
+                    <button onclick="audio_pause(audio_2)">Stop</button>
+                </div>
+            </div>
+            <div class="music-nav" id="m3"><!--m3-->
+                <div class="music-title">Music Title</div>
+                <div class="music-ctrl">
+                    <button onclick="audio_play(audio_3)" id="audio_3" class="audio_btn">Play</button>
+                    <button onclick="audio_pause(audio_3)" >Stop</button>
+                </div>
+            </div>
+            <div class="music-nav" id="m4"><!--m4-->
+                <div class="music-title">Music title</div>
+                <div class="music-ctrl">
+                    <button onclick="audio_play(audio_4)"id="audio_4" class="audio_btn">Play</button>
+                    <button onclick="audio_pause(audio_4)">Stop</button>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</body>      
+<script src="../js/music.js">
+
+</script>
+</html>

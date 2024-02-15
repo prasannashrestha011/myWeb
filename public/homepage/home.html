@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+ 
 </head>
 <body>    <a href="/blog"><button class="back">Back</button> </a>
   <div class="project-header"><div>My projects</div></div>
-    <div class="blocks">
+    <div class="blocks" data-aos="fade-right">
   
         <a href="/project/calculator" class="projects">
           <div class="b1">
@@ -32,12 +34,20 @@
               <div class="title">Rock-Paper-Scissor</div>
               <div class="card-description">Calculator using HTML,CSS and Javascript</div>
             </div>
-          </a>
-        
-
-          
+          </a>      
     </div>
+    
 </body>
 
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
 
+        AOS.init({
+            offset: 300,
+            duration: 1000,
+        });
+
+    
+
+</script>
 </html>
